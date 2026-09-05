@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post 1 – Gjett lyden</title>
+<style>
+  :root {
+    --bark: #3d3427;
+    --moss: #4f6b4a;
+    --moss-dark: #3a4f37;
+    --paper: #f6f1e4;
+    --amber: #c98a3a;
+    --line: rgba(61, 52, 39, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--bark);
+    font-family: "Iowan Old Style", "Georgia", serif;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .postnummer {
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-size: 15vw;
+    line-height: 0.85;
+    color: var(--moss-dark);
+    text-align: center;
+    margin: 0 0 4px 0;
+  }
+
+  .stiforklaring {
+    text-align: center;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: var(--moss);
+    margin: 0 0 28px 0;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: center;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+  }
+
+  p.instruks {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--bark);
+    margin: 0 0 32px 0;
+  }
+
+  .lydboks {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 14px;
+  }
+
+  .lydboks + .lydboks {
+    margin-top: -4px;
+  }
+
+  .lydboks p.klippnavn {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: none;
+    color: var(--moss);
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+
+  audio {
+    width: 100%;
+    display: block;
+  }
+
+  audio::-webkit-media-controls-panel {
+    background-color: #fffdf8;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--moss);
+    line-height: 1.6;
+  }
+
+  footer a {
+    color: var(--amber);
+    text-decoration: underline;
+  }
+
+  hr.strek {
+    border: none;
+    border-top: 1px solid var(--line);
+    width: 60px;
+    margin: 20px auto;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="postnummer">1</p>
+  <p class="stiforklaring">Post 1 av naturstien</p>
+
+  <h1>Hva er dette?</h1>
+  <p class="instruks">
+    Trykk på play og hør nøye etter. Skriv gjettet ditt på svarskjemaet
+    du fikk utdelt.
+  </p>
+
+  <div class="lydboks">
+    <p class="klippnavn">Lydklipp</p>
+    <audio controls preload="metadata">
+      <source src="lyder/Reklame1.mp3" type="audio/mpeg">
+      Nettleseren din støtter ikke avspilling av lyd.
+    </audio>
+  </div>
+
+  <hr class="strek">
+
+  <footer>
+    Får du ikke opp lyden? Sjekk at telefonen ikke er i lydløs-modus,<br>
+    eller be en av arrangørene om hjelp.
+  </footer>
+
+</main>
+</body>
+</html>
